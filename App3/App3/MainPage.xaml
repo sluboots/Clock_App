@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms" 
+             BackgroundColor="BurlyWood">
+
+    <Grid Margin="10" BackgroundColor="Black">
+        <Grid VerticalOptions="Center" Margin="30, 0" BackgroundColor="Black" HorizontalOptions="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <skia:SKCanvasView x:Name="Hour_First" PaintSurface="NumberChoose" Grid.Column="0" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="Hour_Second" PaintSurface="NumberChoose" Grid.Column="1" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="DotsNumber2" PaintSurface="NumberChoose" Grid.Column="2" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="Minute_First" PaintSurface="NumberChoose" Grid.Column="3" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="Minute_Second" PaintSurface="NumberChoose" Grid.Column="4" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="DotsNumber1" PaintSurface="NumberChoose" Grid.Column="5" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="Second_First" PaintSurface="NumberChoose" Grid.Column="6" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="Second_Second" PaintSurface="NumberChoose" Grid.Column="7" Grid.Row="0" />
+        </Grid>
+        
+    </Grid>
+</ContentPage>
